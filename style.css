@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #020617;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 15px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* SECTION */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+/* HERO */
+.hero {
+  margin-top: 70px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background: #38bdf8;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid #38bdf8;
+  padding: 10px 20px;
+  color: #38bdf8;
+}
+
+/* SKILLS SCROLL */
+.skills-scroll {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  animation: scrollSkills 20s linear infinite;
+}
+
+.skills-track span {
+  background: #1e293b;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+@keyframes scrollSkills {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.skills-track:hover {
+  animation-play-state: paused;
+}
+
+/* PROJECTS */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tags span {
+  background: #38bdf8;
+  color: black;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.project-card a {
+  display: block;
+  margin-top: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact-text {
+  margin-bottom: 15px;
+}
+
+.social a {
+  margin: 10px;
+  font-size: 20px;
+  color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
