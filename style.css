@@ -48,6 +48,9 @@ h2 {
 }
 
 .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -64,6 +67,8 @@ h2 {
   border: 2px solid #38bdf8;
   padding: 10px 20px;
   color: #38bdf8;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 /* SKILLS SCROLL */
@@ -154,7 +159,7 @@ footer {
   background: #020617;
 }
 
-/* RESPONSIVE */
+/* ✅ MOBILE FIX (IMPORTANT) */
 @media (max-width: 768px) {
 
   .nav-container {
@@ -168,5 +173,17 @@ footer {
   .projects-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  /* BUTTON FIX */
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn, .btn-outline {
+    width: 80%;
+    margin: 8px 0;
+    text-align: center;
   }
 }
